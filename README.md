@@ -23,7 +23,7 @@ Rock: 152 training/27 testing
 
 Scissors: 150 training/26 testing 
 
-Exported data is also contained in the file Dataset.
+Exported data is also contained in the file gesture_recognition-export.zip
 
 
 ## Model used
