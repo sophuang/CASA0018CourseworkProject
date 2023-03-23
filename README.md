@@ -31,7 +31,7 @@ Exported data is also contained in the file gesture_recognition-export.zip
 Transfer learning is used for this project. The convolutional neural network MobileNetV1 is used.
 
 
-The detailed of model building can be found here: https://studio.edgeimpulse.com/studio/196617 
+The detailed of model building can be found here: https://studio.edgeimpulse.com/public/196617/latest
 
 ## Presentation
 The presentation vedio for this project can be found here: https://youtu.be/Ud4RSV2X0dc 
