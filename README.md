@@ -18,6 +18,8 @@ File 0018_project_trainable_updated.ino is the file that can run the program in 
 
 File gesture_recognition-export.zip is the exported dataset
 
+File 0018_Report.pdf ia the final pdf version of the report
+
 **1. Introduction**
 
 **1.1 Background of Gesture Recognition**
