@@ -92,6 +92,7 @@ Fig.7 Impulse Design
 The "squash" resize mode was chosen to ensure the model retains as much information as possible from the original images. Additionally, the color depth was set to RGB to provide the model with a richer representation of the input data. Upon completion, the generated features were visualized as shown below.
 
 As depicted in the Feature Explorer, the features contained within each label are not easily distinguishable or separable. The sample points are clustered into three prominent groups, with each group containing more than one label. Notably, the groups at the bottom left and bottom right primarily consist of rock and scissors labels. This observation indicates that the rock and scissors labels share similar features, which also aligns with the experimental results presented later in this study. Therefore, we can infer that differentiating between rock and scissor poses a significant challenge for this project.
+
 <img width="260" alt="image" src="https://user-images.githubusercontent.com/109146037/234909647-c275883e-d003-4324-8453-90c17477c6ee.png">
 
 Fig.8 Feature explorer
@@ -123,6 +124,7 @@ As indicated in the table, models employing classification learning type (non-pr
 In pursuit of the best performance on unseen data, the transfer learning approach using MobileNetV1 (Model No. 5) was chosen. This model features a 96x96 image input size, RGB color depth, 0.005 learning rate, and 50 epochs. These results align with the assumptions and discussions presented in sections 1.3 and 2.3.
 
 To elaborate further, a learning rate of 0.005 strikes an optimal balance between faster convergence and preventing the overshooting of optimal weights during the training process, as compared to learning rates of 0.001 and 0.0005. A higher learning rate might cause the model to overshoot the optimal weights, resulting in unstable training, while a lower learning rate could prolong convergence and potentially cause the model to become stuck in local minima. Incorporating RGB color depth enables the model to distinguish between different gestures more effectively. In contrast, grayscale images would limit the model's learning capacity to brightness variations alone, potentially impairing its ability to differentiate between the classes, thus validating the choices made in sections 1.3 and 2.3.
+
     ![image](https://user-images.githubusercontent.com/109146037/234910379-89dbfb37-ca88-4162-981e-0bf33b295d53.png)
 
 Fig.10 Keras mode of MobileNetV1 0.1
@@ -147,6 +149,7 @@ Fig.13 Unoptimized testing set accuracy of trainable MobileNetV1 0.1.
 **3.3 Model Deployment**
 
 Next, the model is deployed in the Arduino IDE. Although the quantized version provided by the EON compiler has lower RAM usage, the unoptimized version offers higher accuracy. As a result, the unoptimized version is chosen for deployment. Afterward, the model is exported as a library, allowing it to be easily integrated into the Arduino IDE for use.
+
 <img width="299" alt="image" src="https://user-images.githubusercontent.com/109146037/234910708-8d0c6428-a7da-4204-9b0d-801fb4e0116b.png">
 
 Fig.14 Anlysis of Quantized and Unoptimized versions of model by EON complier
@@ -160,6 +163,7 @@ To incorporate the desired functionality, custom code has been added to the depl
 <img width="144" alt="image" src="https://user-images.githubusercontent.com/109146037/234910753-e9ed440d-9c73-4299-a657-abe1d7f0f944.png">
 
 - Define a function to gerente a string out of a list of options randomly:
+
 <img width="240" alt="image" src="https://user-images.githubusercontent.com/109146037/234911103-c260a71e-7419-4d01-8f49-e901aaf8c501.png">
 
 - Change the delay time in the program to 5 seconds so that game rounds are not coming too quickly. Turn the image classification delay in the program as a preparing time for the user:
