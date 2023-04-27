@@ -189,6 +189,8 @@ To incorporate the desired functionality, custom code has been added to the depl
 
 **6.1 testing examples**
 ![image](https://user-images.githubusercontent.com/109146037/234911750-adc2dd60-db85-4aeb-9b2d-3e4e8fd5760f.png)
+ 	 
+![image](https://user-images.githubusercontent.com/109146037/234915727-fb13b6d9-05c1-4c3e-9e2d-71fa9eecbfce.png)
 
 
 **7. Discussion and Conclusion**
